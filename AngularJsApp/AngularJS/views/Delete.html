@@ -1,0 +1,74 @@
+﻿<h3>  
+Are you want to sure to delete this record?</h3>  
+<hr />  
+<form class="form-horizontal" style="max-width: 500px;">  
+    <div class="form-group">  
+        <label class="control-label col-xs-3">  
+        First Name :</label>  
+    <div class="col-xs-9">  
+        <p class="form-control-static">  
+        {{ firstname }}</p>  
+    </div>  
+    </div>  
+    <div class="form-group">  
+        <label class="control-label col-xs-3">  
+        Last Name :</label>  
+        <div class="col-xs-9">  
+            <p class="form-control-static">  
+            {{ lastname }}</p>  
+        </div>  
+    </div>  
+    <div class="form-group">  
+        <label class="control-label col-xs-3">  
+        Country :</label>  
+    <div class="col-xs-9">  
+        <p class="form-control-static">  
+        {{ country }}</p>  
+    </div>  
+    </div>  
+    <div class="form-group">  
+        <label class="control-label col-xs-3">  
+        State :</label>  
+    <div class="col-xs-9">  
+        <p class="form-control-static">  
+        {{ state }}</p>  
+    </div>  
+    </div>  
+    <div class="form-group">  
+        <label class="control-label col-xs-3">  
+        Salary :</label>  
+    <div class="col-xs-9">  
+        <p class="form-control-static">  
+        {{ salary }}</p>  
+        </div>  
+    </div>  
+    <div class="form-group">  
+        <label class="control-label col-xs-3">  
+        Date of Birth :</label>  
+        <div class="col-xs-9">  
+            <p class="form-control-static">  
+            {{ dob | date }}</p>  
+        </div>  
+    </div>  
+    <div class="form-group">  
+        <label class="control-label col-xs-3">  
+        Description :</label>  
+        <div class="col-xs-9">  
+            <p class="form-control-static">  
+            {{ description }}</p>  
+        </div>  
+    </div>  
+    <div class="form-group">  
+        <div class="col-xs-offset-3 col-xs-9">  
+            <span class="label" ng-class="{true:'label-success', false:'label-danger', '':'hidden'}[active]">  
+            {{ active ? 'Active' : 'In Active' }}</span>  
+        </div>  
+    </div>  
+    <div class="form-group">  
+        <div class="col-xs-offset-3 col-xs-9 text-center">  
+            <a href="#!/list" class="btn btn-info">Back to List</a>  
+            <button type="submit" class="btn btn-primary" ng-click="delete()">  
+            Delete</button>  
+        </div>  
+    </div>  
+</form>  
